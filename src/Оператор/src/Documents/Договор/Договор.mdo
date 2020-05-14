@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="19dd99e5-9a5a-4f83-a3f8-bdc7d217a963">
+  <producedTypes>
+    <objectType typeId="da47a142-4f45-4511-b541-a9b05e28ab30" valueTypeId="3534f636-1598-46ff-a856-6e659ba4cd55"/>
+    <refType typeId="3e6bfd0b-5026-496d-89f5-7ff0a40dd469" valueTypeId="df6f9f67-cc8b-4119-ba81-752f2afee96c"/>
+    <selectionType typeId="78907ab8-b959-45aa-81e6-67f68896693a" valueTypeId="e5db0a26-ba88-4bdb-90ae-b9f0e4bc51b2"/>
+    <listType typeId="d70f63db-67c9-477c-abad-812b99e48d1a" valueTypeId="299f590b-c732-4ddb-be66-2277aca95f2c"/>
+    <managerType typeId="ea5cf772-a7dd-4d44-823a-35620fff558e" valueTypeId="93b575cd-f6ef-4598-9c9c-4d5977739a51"/>
+  </producedTypes>
+  <name>Договор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Договор (Продление)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Договор.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.РасчетыСАбонентами</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+</mdclass:Document>

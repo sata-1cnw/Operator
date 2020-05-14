@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8149df0b-d80a-4e6a-be6c-4ae0aa9680cb">
+  <producedTypes>
+    <objectType typeId="5e398d55-742a-4c6c-90d3-8924e370403e" valueTypeId="d8069e67-9c8d-40cc-b9e6-b366f4da859f"/>
+    <refType typeId="0dffcd35-2789-4a32-8dbf-0b207693f73c" valueTypeId="ac6bacbe-6301-4ce4-894f-d75254bf1eab"/>
+    <selectionType typeId="042330c1-816e-4cc4-a057-8303615081a7" valueTypeId="2b3af06d-ed44-44e3-9767-004942689c4b"/>
+    <listType typeId="c644d7ba-f1df-4a2c-abab-c2d5c275d12c" valueTypeId="e9943e18-dd9b-4643-a881-34e508067ad4"/>
+    <managerType typeId="6c083336-3ce8-4935-b451-63a3a359dfee" valueTypeId="1d301be5-6daf-4f3a-bc6c-3d7c9249f10f"/>
+  </producedTypes>
+  <name>ПриемОплатыОтАбонента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прием оплаты от абонента</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриемОплатыОтАбонента.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.РасчетыСАбонентами</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+</mdclass:Document>

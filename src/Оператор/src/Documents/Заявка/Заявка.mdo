@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c52c7dd6-e168-4299-9cf3-0323405c2358">
+  <producedTypes>
+    <objectType typeId="138678c5-cff8-43f2-ba36-8097a42271d6" valueTypeId="a4f767e4-3efb-4d56-aef9-dcd8dd274773"/>
+    <refType typeId="38418c3c-7652-4862-bfc8-b7a36ef441f2" valueTypeId="03b1452d-c603-4262-8133-d8bf4509629e"/>
+    <selectionType typeId="0d040adc-cb17-4055-8671-24f89f437e3c" valueTypeId="1345fece-35fa-4749-9fda-746bb6287fe5"/>
+    <listType typeId="639e72da-288e-48b1-a80c-8432f3433ea1" valueTypeId="9410968a-5a9a-4e97-bb7b-a27902e02110"/>
+    <managerType typeId="e06e2fbe-5b2b-4635-9292-e7ab45537c38" valueTypeId="bc41bf6b-028c-457e-ad6f-4640226fe72d"/>
+  </producedTypes>
+  <name>Заявка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Заявка.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>InformationRegister.ИсторияИспользованияОборудования</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="10a01957-6c26-4e44-8c35-090da00a83bb">
+    <name>ВидЗаявки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид заявки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="45f1dfe5-0116-4d86-a48c-792ac9282cda">
+    <producedTypes>
+      <objectType typeId="48812caa-77f6-4758-8d6a-bc73ee03e03b" valueTypeId="b03eb3b4-0892-409b-a0e7-95834f012d1c"/>
+      <rowType typeId="f43413f0-c9f0-4e72-aaa6-46f804a7343c" valueTypeId="edb2b5e0-ada0-4818-8fad-2561b998adc6"/>
+    </producedTypes>
+    <name>ИспользуемоеОборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используемое оборудование</value>
+    </synonym>
+    <attributes uuid="2244fcb6-9dfa-4782-8dd5-6334459b608f">
+      <name>Оборудование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оборудование</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Оборудование</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

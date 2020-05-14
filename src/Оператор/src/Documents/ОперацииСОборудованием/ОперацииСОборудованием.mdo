@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e47b10f4-f446-46cd-82ae-a0b748837360">
+  <producedTypes>
+    <objectType typeId="1fc91a19-1371-4c56-a7be-803b7d503091" valueTypeId="376526c3-cabd-4304-aa16-a555278951fa"/>
+    <refType typeId="f6c97159-2fd6-4460-acd6-355407e81d8a" valueTypeId="e81d6000-e5d0-4310-bf9f-93cf2b6e3c2e"/>
+    <selectionType typeId="6b82683c-4eae-4d84-929c-f965de228095" valueTypeId="bf0b484c-94a0-4f95-b334-ca875f7eef7e"/>
+    <listType typeId="13fbe1c7-3d68-446a-98fc-378da1de2838" valueTypeId="d6860297-b9d7-4a7c-be87-9efcb58f0c34"/>
+    <managerType typeId="9051ad08-d6e7-424a-9860-038e83f51798" valueTypeId="63a989dc-a38a-449f-9b42-28a8f131f522"/>
+  </producedTypes>
+  <name>ОперацииСОборудованием</name>
+  <synonym>
+    <key>ru</key>
+    <value>Операции с оборудованием</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ОперацииСОборудованием.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <basedOn>Document.ОперацииСОборудованием</basedOn>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>InformationRegister.ИсторияИспользованияОборудования</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="0ffa03bb-6a31-4f24-b6c7-4d0c99535cdb">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4bef6649-833a-4c4e-82f1-376e0a78acb3">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3209e344-5d68-467a-9fb7-0c77059262b8">
+    <name>Мастер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мастер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="ded7f73b-7258-4d6a-a8c9-3f176e50e65a">
+    <producedTypes>
+      <objectType typeId="37c230cf-7add-4711-9464-33a2ff9cf2dc" valueTypeId="f9ca92d6-2018-4a58-8fa4-258083a058a6"/>
+      <rowType typeId="03935a2f-1cfe-4393-ae3b-6906d9c680b7" valueTypeId="97f91ed2-a2fa-46e0-8883-3452cfa55141"/>
+    </producedTypes>
+    <name>ИспользуемоеОборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используемое оборудование</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="2da20a67-d4dc-46cd-b0a0-5f42df58925c">
+      <name>Оборудование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оборудование</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Оборудование</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

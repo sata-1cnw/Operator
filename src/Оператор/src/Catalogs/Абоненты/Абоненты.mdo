@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3040c98b-964e-493e-9a80-5da8cfa22c42">
+  <producedTypes>
+    <objectType typeId="2d87c230-ccd4-4757-b43e-6f19b4fa734f" valueTypeId="5c124c20-954c-41cd-9529-dc8b0663202b"/>
+    <refType typeId="981cc83d-5ba7-44a5-b442-31d6c54668d6" valueTypeId="3d3f8991-e3f8-45e8-92bd-68437fd919ed"/>
+    <selectionType typeId="479ee56b-f3ff-404d-b128-5505614b0f22" valueTypeId="97111a5b-1d59-41c4-8656-3ed358985838"/>
+    <listType typeId="f69b5f8a-485a-4c84-86b8-998bdff3f3e9" valueTypeId="6cba05ec-0b4c-461f-9333-34080bf71210"/>
+    <managerType typeId="cecafc1f-c42d-4955-9175-0cfb1b819660" valueTypeId="c3682d05-f739-4c43-be98-f1d977451352"/>
+  </producedTypes>
+  <name>Абоненты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Абоненты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Абоненты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Абоненты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="75451852-dcf8-406d-8f6e-754f089d1a27">
+    <name>Активный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активный</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c2856f5f-8552-45d6-bb54-fbb05e0c252d">
+    <name>ДатаПодписки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подписки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

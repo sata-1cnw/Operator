@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="559fc904-e8b7-4bf5-9666-b2609e079ed4">
+  <producedTypes>
+    <selectionType typeId="00e831c9-63e4-4997-9d00-988ae71a5298" valueTypeId="ceaa8b00-c1b5-4e5c-9477-1c4cd73db44a"/>
+    <listType typeId="075e66e5-6b03-4f64-a58d-fdae2f6fe0d0" valueTypeId="a25c6439-80c1-4385-87d6-8f5a87450552"/>
+    <managerType typeId="0f87fac5-da07-4c15-9644-b6b6d2b76b50" valueTypeId="c435ab37-745e-439e-899e-87b52150eb9c"/>
+    <recordSetType typeId="0d8210cf-648b-4c91-98c7-7376da23979f" valueTypeId="d669bac5-cf06-4849-a3cc-822ca20c19c5"/>
+    <recordKeyType typeId="12d2fa3b-2288-4655-b7c5-2e964b332ea5" valueTypeId="549d25b3-6a43-46bb-ad37-6d8b478729c2"/>
+    <recordType typeId="5a5a4bd0-4f56-4727-be02-fd452a43f191" valueTypeId="34b45c48-d7ee-4a92-9b7e-d32aae87b830"/>
+    <recordManagerType typeId="d988dd37-27cf-4c09-8d2e-0e3367f49305" valueTypeId="7ecf5a8f-a3e1-4816-8efb-a2c922b7c579"/>
+  </producedTypes>
+  <name>ИсторияИспользованияОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>История использования оборудования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="8fdc178d-fda2-4148-a63e-306f2cdcee4e">
+    <name>Оборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборудование</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Оборудование</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c12ed17f-78ff-46be-aa89-c360702891b9">
+    <name>АбонентСкладМастер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Абонент склад мастер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Абоненты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

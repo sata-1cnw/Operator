@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26cc2ff6-b5de-48cc-8a67-7fe36c56d024">
+  <producedTypes>
+    <objectType typeId="fb3293ab-de5c-4db4-9d95-825ca9901ed8" valueTypeId="db8319b9-5590-46a1-99db-b1ecacf11aff"/>
+    <refType typeId="6d761ce2-54d0-4d7e-a5e4-bb9933825f9f" valueTypeId="517f3b28-328a-4534-972e-8925742f4529"/>
+    <selectionType typeId="b140b290-b044-46c8-bd41-2659cd2eeeb3" valueTypeId="fd19309d-2683-4bef-bb76-a89b4f451665"/>
+    <listType typeId="96ab14aa-2ca9-44c2-b167-a64320c8e7df" valueTypeId="3b782448-aaa3-4573-8d0a-0d0154afede1"/>
+    <managerType typeId="9ad78120-be02-4d4d-87ee-25a95e8a0311" valueTypeId="e20ff1ba-249f-480c-8a7d-d83812873c2f"/>
+  </producedTypes>
+  <name>ВидыЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды заявок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыЗаявок.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыЗаявок.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="c23370dd-ce06-44bf-8d74-b7435ff8d432">
+      <name>НаПодключение</name>
+      <description>На подключение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="08da3246-1f11-400a-82af-8047a46bac2d">
+      <name>НаПроведениеОбслуживания</name>
+      <description>На проведение обслуживани</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <tabularSections uuid="e5ce1dd4-f3b4-4f6a-b60a-53907a5a2f06">
+    <producedTypes>
+      <objectType typeId="3539a60e-105e-4683-868a-db1cf22d41ba" valueTypeId="e3ff7493-749e-4e51-ac0e-ed0ec5becae5"/>
+      <rowType typeId="6c094f51-0d28-4ebf-823b-a6e738953467" valueTypeId="d947c33c-f812-46c8-98e1-623d6e2709dc"/>
+    </producedTypes>
+    <name>ИспользуемоеОборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используемое оборудование</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="5a6417bc-0bb8-4647-b4bb-dd894b21e1b6">
+      <name>Оборудование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оборудование</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Оборудование</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Catalog>

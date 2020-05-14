@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="67540e62-2273-4226-9d3f-46743f0d5a3f">
+  <producedTypes>
+    <objectType typeId="e1b436a5-0797-49bc-8105-71cc44dad824" valueTypeId="e77ac041-0f04-40d6-8f94-6618f80575e7"/>
+    <refType typeId="b4f8650c-d618-41c7-b278-39889531d39a" valueTypeId="94fd2654-5141-4e27-9de4-f9b35df7aab3"/>
+    <selectionType typeId="55a9c668-006f-404a-84be-68c3ad828d7f" valueTypeId="43c62701-fe8f-4200-8e6b-9449c1977b29"/>
+    <listType typeId="14d5f8ba-5f74-4620-81e6-25a7ab1610d6" valueTypeId="272bb1a9-953f-4715-b3be-74121d1d5900"/>
+    <managerType typeId="d6d13de0-ed1a-4623-9ec8-c0408780e910" valueTypeId="6e418638-79f4-4981-b3bd-eac2894dff6c"/>
+  </producedTypes>
+  <name>Тарифы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тарифы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Тарифы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Тарифы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

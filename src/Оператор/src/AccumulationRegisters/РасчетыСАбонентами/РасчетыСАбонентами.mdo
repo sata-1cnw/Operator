@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8dc94ed8-2c7c-41cf-9347-dc002d1b033c">
+  <producedTypes>
+    <selectionType typeId="85dccb4e-eb07-406b-a703-ed687f4de21d" valueTypeId="34ef8d17-5777-4015-8a61-d2e049f61df6"/>
+    <listType typeId="47cc04ad-1cdf-4201-be31-cc4bf7a267e8" valueTypeId="e286682a-ea2b-4df1-b80f-9e33ac979483"/>
+    <managerType typeId="fe68aff0-0cfd-4ff1-862e-1e010cabede0" valueTypeId="6df70e95-81c7-4d1a-b3b6-422fda4d9efc"/>
+    <recordSetType typeId="5111fe37-f626-4112-9da3-a277b67fc95b" valueTypeId="f6b4f197-a6bb-486e-986f-cfc860f7d53c"/>
+    <recordKeyType typeId="d2985614-ddd6-48fe-92f4-bd540a3aec41" valueTypeId="089d725b-1ba2-40be-b934-cf2672d96b95"/>
+    <recordType typeId="e11fe2b1-ebca-4c06-9484-b369c2e4b37c" valueTypeId="616805b2-733b-409d-a89c-6d7482b923b7"/>
+  </producedTypes>
+  <name>РасчетыСАбонентами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчеты с абонентами</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="5d33256c-b0ae-441f-a1bd-8a99269c5a75">
+    <name>СуммаДолга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма долга</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="e59484f1-f457-4d73-9fef-00784d865da1">
+    <name>Абонент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Абонент</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

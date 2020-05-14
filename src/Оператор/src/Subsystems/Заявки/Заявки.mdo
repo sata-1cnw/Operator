@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="809796a5-a867-4ba7-baa5-1cee79852eb2">
+  <name>Заявки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявки</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ВидыЗаявок</content>
+  <content>Document.Заявка</content>
+  <content>Catalog.Абоненты</content>
+</mdclass:Subsystem>

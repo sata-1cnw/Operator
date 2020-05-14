@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8d264647-3f8a-4fda-97aa-ed680b3a9029">
+  <producedTypes>
+    <selectionType typeId="d722907d-389d-46ab-8e5a-594842342a4d" valueTypeId="eebab257-2d78-49c3-87eb-8d2582a6ae19"/>
+    <listType typeId="65c628d9-751e-4077-bfe1-c8f8da3a5507" valueTypeId="41a4978c-466e-4a12-a87b-ff22f90a9e97"/>
+    <managerType typeId="7845b788-752a-4968-a39d-d5e15a450ceb" valueTypeId="ae98ebd0-fbda-469b-abc7-7b97ca263003"/>
+    <recordSetType typeId="880473b4-c94f-44b8-b258-6f0bfd701348" valueTypeId="5c903cf3-3539-460a-93ad-d3b295dbe8eb"/>
+    <recordKeyType typeId="7b374558-1ab3-4689-97cb-c3a7d8608de6" valueTypeId="e3445447-d5d2-4f3e-a733-39fcee77b92a"/>
+    <recordType typeId="f20ae079-2927-44e7-99af-0437c37fe3bd" valueTypeId="29fd215b-d645-4933-8377-11ac3225743a"/>
+    <recordManagerType typeId="9723ae79-b067-4205-a615-24a3c3d711b6" valueTypeId="7676a463-fc21-4886-95bc-145fd0329bff"/>
+  </producedTypes>
+  <name>Цены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="dcd18f7b-d8d8-4307-a8ec-0dc59b368a15">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="35c78499-a208-4305-b0b3-4ba66cf63cc5">
+    <name>Тариф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тариф</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Тарифы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
